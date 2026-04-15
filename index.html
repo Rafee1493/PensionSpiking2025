@@ -18,10 +18,9 @@ p{margin-bottom:.75rem}
 .kpi.info .kpi-value{color:#185FA5}
 .section{margin-bottom:2rem}
 .chart-wrap{position:relative;width:100%}
-.chart-wrap.h220{height:220px}.chart-wrap.h240{height:240px}.chart-wrap.h260{height:260px}
-.chart-wrap.h280{height:280px}.chart-wrap.h300{height:300px}.chart-wrap.h320{height:320px}
-.chart-wrap.h360{height:360px}.chart-wrap.h420{height:420px}.chart-wrap.h480{height:480px}
-.chart-wrap.h180{height:180px}.chart-wrap.h200{height:200px}
+.h180{height:180px}.h200{height:200px}.h220{height:220px}.h240{height:240px}
+.h260{height:260px}.h280{height:280px}.h300{height:300px}.h320{height:320px}
+.h360{height:360px}.h400{height:400px}.h420{height:420px}.h480{height:480px}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--color-text-secondary);margin-bottom:8px}
 .legend span{display:flex;align-items:center;gap:5px}
 .legend .dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
@@ -32,8 +31,8 @@ td{padding:6px 10px;border-bottom:.5px solid var(--color-border-tertiary)}
 tr:last-child td{border-bottom:none}
 .badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500}
 .badge-red{background:#FCEBEB;color:#A32D2D}
-.badge-blue{background:#E6F1FB;color:#185FA5}
 .badge-amber{background:#FAEEDA;color:#854F0B}
+.badge-blue{background:#E6F1FB;color:#185FA5}
 .callout{background:var(--color-background-secondary);border-left:3px solid #D85A30;border-radius:0 8px 8px 0;padding:.9rem 1rem;margin:1rem 0;font-size:14px}
 .callout.blue{border-left-color:#185FA5}
 .callout.amber{border-left-color:#BA7517}
@@ -64,8 +63,8 @@ tr:last-child td{border-bottom:none}
   <div class="kpi accent"><div class="kpi-label">Estimated 20-year undiscounted taxpayer liability</div><div class="kpi-value">$93.2M</div><div class="kpi-sub">This cohort alone, no COLA adjustment</div></div>
   <div class="kpi warn"><div class="kpi-label">NYS State Police retirees analyzed</div><div class="kpi-value">247</div><div class="kpi-sub">Avg pension: $95,161</div></div>
   <div class="kpi warn"><div class="kpi-label">Suffolk County Police retirees analyzed</div><div class="kpi-value">135</div><div class="kpi-sub">Avg pension: $154,870</div></div>
-  <div class="kpi info"><div class="kpi-label">Suffolk: pensions above 2023 base pay</div><div class="kpi-value">59 / 135</div><div class="kpi-sub">44% of retirees</div></div>
-  <div class="kpi info"><div class="kpi-label">State Police: pensions above 2023 base pay</div><div class="kpi-value">38 / 247</div><div class="kpi-sub">15% of retirees</div></div>
+  <div class="kpi info"><div class="kpi-label">Suffolk: pensions above avg 2021–23 gross pay</div><div class="kpi-value">58 / 135</div><div class="kpi-sub">43% of retirees</div></div>
+  <div class="kpi info"><div class="kpi-label">State Police: pensions above 2023 base pay</div><div class="kpi-value">38 / 252</div><div class="kpi-sub">15% of retirees</div></div>
 </div>
 
 <hr class="divider">
@@ -75,7 +74,7 @@ tr:last-child td{border-bottom:none}
 <p>Pension spiking — the strategic escalation of overtime earnings in the years immediately preceding retirement to inflate the Final Average Salary (FAS) — is a well-documented vulnerability in public-sector defined-benefit systems. This report presents quantitative evidence of systematic spiking in two New York PFRS agencies: the NYS Division of Police and the Suffolk County Police Department.</p>
 <p>Using payroll records from 2018 to 2024 and published pension data, we construct an overtime intensity metric and apply a difference-in-differences (DiD) framework. The DiD design isolates individual pre-retirement behavior from broader staffing and overtime trends by benchmarking retirees against comparable active officers in the same agency and bargaining unit.</p>
 <div class="callout">
-The analysis finds statistically meaningful evidence that pre-retirement officers ramp overtime intensity in their final three years, well above the increase observed among active officers over the same period. The implied excess annual pension obligation is approximately <strong>$4.66 million per year</strong> for the 382 matched retirees — a figure that compounds to over <strong>$93 million in undiscounted 20-year liability</strong> for this cohort alone.
+The analysis finds statistically meaningful evidence that pre-retirement officers ramp overtime intensity in their final years, well above the increase observed among active officers over the same period. The implied excess annual pension obligation is approximately <strong>$4.66 million per year</strong> for the 382 matched retirees — a figure that compounds to over <strong>$93 million in undiscounted 20-year liability</strong> for this cohort alone.
 </div>
 </div>
 
@@ -83,11 +82,11 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
 
 <div class="section">
 <h2>2. Background: the pension spiking mechanism</h2>
-<p>The New York Police and Fire Retirement System (PFRS) has four member tiers. Tiers 1 and 2 cover officers who joined before July 1, 2009. Tier 3 covers a brief window from July 2009 through March 2012. Tier 6 applies to officers hired on or after April 1, 2012. There is no Tier 4 or Tier 5 in PFRS (those tiers exist only in the separate Employees' Retirement System). The overwhelming majority of the 2024 retirees in this study — 313 of 320 State Police retirees — joined under Tier 2.</p>
-<p>Under PFRS, a member's pension equals their Final Average Salary multiplied by years of credited service and a tier-specific accrual rate. For Tier 2 members — the dominant tier in this cohort — FAS is the average of the three highest consecutive years of earnings, and overtime is included in FAS without any cap. Tier 6 members face a 15% of salary cap on pensionable overtime, but they represent fewer than 2% of the 2024 retirees studied here.</p>
+<p>The New York Police and Fire Retirement System (PFRS) has four member tiers. Tiers 1 and 2 cover officers who joined before July 1, 2009. Tier 3 covers a brief window from July 2009 through March 2012. Tier 6 applies to officers hired on or after April 1, 2012. There is no Tier 4 or Tier 5 in PFRS — those tiers exist only in the separate Employees' Retirement System. The overwhelming majority of the 2024 retirees in this study joined under Tier 2.</p>
+<p>Under PFRS, a member's pension equals their Final Average Salary multiplied by years of credited service and a tier-specific accrual rate. For Tier 2 members — the dominant tier in this cohort — FAS is the average of the three highest consecutive years of earnings, and overtime is included in FAS without any cap. Tier 6 members face a 15% of salary cap on pensionable overtime, but represent fewer than 2% of the 2024 retirees studied.</p>
 <p>The incentive is direct and large: a Trooper with a $100,000 base salary who adds $40,000 per year in overtime during the three-year FAS window raises their FAS from $100,000 to $140,000. With 20 years of service, that translates to a pension uplift of roughly $20,000 per year for life.</p>
 <div class="callout blue">
-<strong>The 20% anti-spiking rule</strong> (applicable to post-1971 Tier 2 members): if any year's earnings in the FAS window exceed the preceding year's earnings by more than 20%, the excess is excluded. This creates the strategic ramp: rather than spiking in a single final year, officers gradually escalate overtime over 3–4 years, staying within the 20% threshold each year while still substantially inflating FAS. The exhibit in Section 3 illustrates a hypothetical officer reaching the cap optimally.
+<strong>The 20% anti-spiking rule</strong> (applicable to post-1971 Tier 2 members): if any year's earnings in the FAS window exceed the preceding year's earnings by more than 20%, the excess is excluded. This creates the strategic ramp — rather than spiking in a single final year, officers gradually escalate overtime over 3–4 years, staying within the 20% threshold each year while substantially inflating FAS. The individual trajectories in Section 7 illustrate this pattern clearly.
 </div>
 </div>
 
@@ -96,33 +95,34 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
 <div class="section">
 <h2>3. Data &amp; methodology</h2>
 <h3>3.1 Data sources</h3>
-<p><strong>NYS Division of Police retirees:</strong> The 2024 NYSLRS PFRS pension roll was matched to the NYS payroll database by name. Of 320 State Police entries, 247 were reliably matched to payroll records covering 2018–2024. Employees with unresolvable name duplicates were excluded.</p>
-<p><strong>Suffolk County Police retirees:</strong> Suffolk County public payroll data was matched to the 2024 NYSLRS PFRS pension roll. 135 Suffolk retirees were matched with sufficient payroll coverage; four to five with duplicate name matches were excluded.</p>
-<p><strong>Control groups:</strong> Active employees in both agencies were retained as controls, filtered to the same base pay ranges and bargaining units as the retiring cohort. The State control group comprised 2,785 active officers; the Suffolk control group comprised 1,344 officers.</p>
+<p><strong>NYS Division of Police retirees:</strong> The 2024 NYSLRS PFRS pension roll was matched to the NYS payroll database by name. Of 320 State Police entries, 247–252 were reliably matched to payroll records covering 2018–2024. Employees with unresolvable name duplicates were excluded.</p>
+<p><strong>Suffolk County Police retirees:</strong> Suffolk County public payroll data — which reports gross annual pay rather than a base pay rate — was matched to the 2024 NYSLRS PFRS pension roll. 135 Suffolk retirees were matched with sufficient payroll coverage; four to five with duplicate name matches were excluded.</p>
+<p><strong>Control groups:</strong> Active employees in both agencies, filtered to the same base pay ranges and bargaining units as the retiring cohort, were retained as controls. The State control group comprised 2,785 active officers; Suffolk comprised 1,344.</p>
 
-<h3>3.2 Overtime intensity metric</h3>
-<p>We normalize overtime using the overtime intensity ratio: annual overtime earnings divided by the officer's annualized base pay rate. A ratio of 0.30 means overtime equivalent to 30% of base salary. This removes the mechanical inflation of OT dollars due to base pay raises and enables cross-agency, cross-year comparisons. Three-year averages are computed for the baseline window (2018–2020) and the spike window (2022–2024). The year 2021 is excluded from both analytical windows: officers retiring in early or mid-2024 may have had 2021 earnings included in their FAS, making 2021 a potential spiking year that would understate the baseline if included. Partial-year 2024 overtime for retirees is annualized. Only officers with non-zero overtime in both periods are included.</p>
+<h3>3.2 Overtime intensity metric and spike window definition</h3>
+<p>We normalize overtime using the overtime intensity ratio: annual overtime earnings divided by the officer's annualized base pay rate for that year. Three-year averages are computed for a baseline window (2018–2020) and a spike window. The spike window is defined differently depending on when the officer retired:</p>
+<ul style="margin:.5rem 0 .75rem 1.5rem;font-size:14px;line-height:1.9">
+  <li>Officers retiring in <strong>the second half of 2024</strong> (July–December): spike window is 2022–2024, with 2024 OT annualized.</li>
+  <li>Officers retiring in <strong>the first half of 2024</strong> (January–June): spike window is 2021–2023, since the FAS window for these officers is more likely to include 2021 than 2024.</li>
+</ul>
+<p>The year 2021 is excluded from analysis where appropriate for this reason. For the control group, the 2022–2024 window is used uniformly. Only officers with non-zero overtime in both periods are included in the DiD.</p>
 
-<h3>3.3 Difference-in-differences design</h3>
-<p>The DiD estimator asks: did retirees' overtime intensity increase more than comparable active officers' intensity over the same period? The parallel trends assumption is supported by both groups facing identical labor market conditions, COVID staffing pressures, and contract cycles.</p>
-<div class="callout amber">
-<strong>Conservative bias in the control group:</strong> Active employees who are 1–3 years from retirement are themselves likely already spiking. Their inclusion in the control group means our DiD estimates understate the true magnitude of the spiking behavior — the actual gap between genuine non-spikers and retirees is larger than shown.
-</div>
+<h3>3.3 Suffolk County gross pay adjustment</h3>
+<p>Suffolk County payroll data reports gross annual pay — total compensation including overtime and other supplements — rather than a fixed base rate. This creates a subtle underestimation of spiking: some Suffolk officers worked their highest overtime several years before retirement (for example, Michael Malerba earned $145,654 in overtime in 2021 and $101,387 in 2019, but just $6,510 in 2022–23), which depresses their spike-window intensity while inflating their gross pay in those earlier years. The 2024 or 2023 gross pay figure would artificially reflect those peak-OT years as the "base," causing the pension-to-pay comparison to understate the pension premium. To correct for this, when comparing Suffolk pensions against pay in Section 6.2, we use each officer's <strong>average gross pay over 2021–2023</strong> as the baseline rather than a single year's figure.</p>
 
 <h3>3.4 Pension cost methodology</h3>
-<p>The excess annual pension attributed to spiking is estimated as follows for each retiree:</p>
 <div class="calc-box">
   <div class="calc-row"><span class="calc-label">FAS(OT) — 3-year average OT in the spike window</span><span class="calc-val">from payroll data</span></div>
   <div class="calc-row"><span class="calc-label">Baseline OT — 3-year average OT in 2018–2020</span><span class="calc-val">from payroll data</span></div>
-  <div class="calc-row"><span class="calc-label">FAS excess = FAS(OT) − Baseline OT (clipped at 0)</span><span class="calc-val">State avg: $16,194 | Suffolk avg: ~$6,900</span></div>
+  <div class="calc-row"><span class="calc-label">FAS excess = FAS(OT) − Baseline OT (clipped at 0)</span><span class="calc-val">State avg: $16,194 · Suffolk avg: ~$6,900</span></div>
   <div class="calc-row"><span class="calc-label">Approx. total FAS = Base Pay + FAS(OT)</span><span class="calc-val">State avg: ~$124,000</span></div>
   <div class="calc-row"><span class="calc-label">Pension boost = Pension Rate × (FAS excess ÷ Total FAS)</span><span class="calc-val">proportional attribution</span></div>
-  <div class="calc-row"><span class="calc-label">State total annual excess</span><span class="calc-val" style="color:#D85A30">$2,394,000 (247 retirees, avg $9,692/yr)</span></div>
-  <div class="calc-row"><span class="calc-label">Suffolk total annual excess</span><span class="calc-val" style="color:#D85A30">$2,267,000 (135 retirees, avg $17,048/yr)</span></div>
+  <div class="calc-row"><span class="calc-label">State total annual excess</span><span class="calc-val" style="color:#D85A30">$2,394,000 · 247 retirees · avg $9,692/yr</span></div>
+  <div class="calc-row"><span class="calc-label">Suffolk total annual excess</span><span class="calc-val" style="color:#D85A30">$2,267,000 · 135 retirees · avg $17,048/yr</span></div>
   <div class="calc-row"><span class="calc-label">Combined annual excess pension cost</span><span class="calc-val" style="color:#D85A30">$4,661,000 / year</span></div>
-  <div class="calc-row"><span class="calc-label">20-year undiscounted liability</span><span class="calc-val" style="color:#D85A30">$93,220,000</span></div>
+  <div class="calc-row"><span class="calc-label">20-year undiscounted liability (this cohort only)</span><span class="calc-val" style="color:#D85A30">$93,220,000</span></div>
 </div>
-<p class="note">This is a conservative estimate: it uses proportional attribution rather than a structural pension formula, does not include COLA escalation, and the control group likely contains pre-retirees already spiking — all of which push the true figure higher.</p>
+<p class="note">Conservative estimate: does not include COLA escalation, uses proportional attribution, and the control group likely contains near-retirees already spiking — all pushing the true figure higher.</p>
 </div>
 
 <hr class="divider">
@@ -132,18 +132,18 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
 <div class="table-wrap">
 <table>
 <thead>
-<tr><th>Agency</th><th>Bargaining unit</th><th>Group</th><th>N</th><th>OT ratio 2018–20</th><th>OT ratio 2022–24</th><th>Change</th><th>DiD</th></tr>
+<tr><th>Agency</th><th>Bargaining unit</th><th>Group</th><th>N</th><th>OT ratio 2018–20</th><th>OT ratio spike window</th><th>Change</th><th>DiD</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="2"><strong>NYS State Police</strong></td><td>Investigators</td><td>Retirees</td><td>72</td><td>13.4%</td><td>27.0%</td><td>+102%</td><td rowspan="2" style="color:#D85A30;font-weight:500">+41 ppts</td></tr>
+<tr><td rowspan="2"><strong>NYS State Police</strong></td><td>Investigators</td><td>Retirees</td><td>72</td><td>13.4%</td><td>24.6%</td><td>+83%</td><td rowspan="2" style="color:#D85A30;font-weight:500">+22 ppts</td></tr>
 <tr><td>Investigators</td><td>Active</td><td>1,032</td><td>13.3%</td><td>21.4%</td><td>+61%</td></tr>
-<tr style="background:var(--color-background-secondary)"><td rowspan="2"></td><td>Troopers</td><td>Retirees</td><td>87</td><td>18.9%</td><td>40.3%</td><td>+114%</td><td rowspan="2" style="color:#D85A30;font-weight:500">+51 ppts</td></tr>
+<tr style="background:var(--color-background-secondary)"><td rowspan="2"></td><td>Troopers</td><td>Retirees</td><td>87</td><td>18.9%</td><td>34.8%</td><td>+84%</td><td rowspan="2" style="color:#D85A30;font-weight:500">+22 ppts</td></tr>
 <tr style="background:var(--color-background-secondary)"><td>Troopers</td><td>Active</td><td>1,140</td><td>15.0%</td><td>24.4%</td><td>+63%</td></tr>
-<tr><td rowspan="2"></td><td>Comm &amp; Non-Comm</td><td>Retirees</td><td>45</td><td>13.8%</td><td>21.6%</td><td>+57%</td><td rowspan="2" style="color:#BA7517;font-weight:500">+35 ppts</td></tr>
+<tr><td rowspan="2"></td><td>Comm &amp; Non-Comm</td><td>Retirees</td><td>47</td><td>13.2%</td><td>20.4%</td><td>+55%</td><td rowspan="2" style="color:#BA7517;font-weight:500">+34 ppts</td></tr>
 <tr><td>Comm &amp; Non-Comm</td><td>Active</td><td>613</td><td>12.8%</td><td>15.6%</td><td>+22%</td></tr>
 <tr style="background:var(--color-background-secondary)"><td rowspan="2"><strong>Suffolk County</strong></td><td>PBA</td><td>Retirees</td><td>81</td><td>20.7%</td><td>42.0%</td><td>+103%</td><td rowspan="2" style="color:#D85A30;font-weight:500">+28 ppts</td></tr>
 <tr style="background:var(--color-background-secondary)"><td>PBA</td><td>Active</td><td>744</td><td>14.7%</td><td>25.6%</td><td>+75%</td></tr>
-<tr><td rowspan="2"></td><td>SDA (Detectives)</td><td>Retirees</td><td>24</td><td>23.5%</td><td>30.5%</td><td>+30%</td><td rowspan="2" style="color:#185FA5;font-weight:500">–5 ppts</td></tr>
+<tr><td rowspan="2"></td><td>SDA (Detectives)</td><td>Retirees</td><td>24</td><td>23.5%</td><td>30.5%</td><td>+30%</td><td rowspan="2" style="color:#185FA5;font-weight:500">–8 ppts</td></tr>
 <tr><td>SDA (Detectives)</td><td>Active</td><td>309</td><td>20.6%</td><td>28.4%</td><td>+38%</td></tr>
 <tr style="background:var(--color-background-secondary)"><td rowspan="2"></td><td>SOA (Supervisors)</td><td>Retirees</td><td>30</td><td>12.4%</td><td>18.3%</td><td>+48%</td><td rowspan="2" style="color:#BA7517;font-weight:500">+21 ppts</td></tr>
 <tr style="background:var(--color-background-secondary)"><td>SOA (Supervisors)</td><td>Active</td><td>291</td><td>15.5%</td><td>19.7%</td><td>+27%</td></tr>
@@ -152,52 +152,50 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
 </div>
 
 <div class="chart-wrap h280" style="margin-top:1.5rem">
-<canvas id="didChart" role="img" aria-label="Grouped bar chart of OT intensity change for retirees vs active officers by bargaining unit. Retirees show larger increases in all units except SDA detectives.">Retirees outpaced active officers in OT intensity growth across all bargaining units except Suffolk County detectives.</canvas>
+<canvas id="didChart" role="img" aria-label="Grouped bar chart of OT intensity change for retirees vs active officers by bargaining unit.">Retirees outpaced active officers in OT intensity growth across five of six bargaining units.</canvas>
 </div>
 <div class="legend">
-  <span><span class="dot" style="background:#D85A30"></span>Retirees: % change in OT ratio 2018–20 vs 2022–24</span>
-  <span><span class="dot" style="background:#378ADD"></span>Active officers: % change in OT ratio 2018–20 vs 2022–24</span>
+  <span><span class="dot" style="background:#D85A30"></span>Retirees: % change in OT ratio, baseline vs spike window</span>
+  <span><span class="dot" style="background:#378ADD"></span>Active officers: % change in OT ratio, same period</span>
 </div>
 
 <h3>What the results show</h3>
-<p>The most striking finding is the Troopers bargaining unit, where retiring officers increased their average overtime intensity by <strong>114%</strong> between the two windows — nearly double the 63% increase seen among active Troopers in the same period. The DiD gap of 51 percentage points is the largest of any subgroup. For Investigators, the DiD gap is 41 percentage points — retirees grew OT intensity at 102% versus 61% for active officers.</p>
-<p>The Comm &amp; Non-Comm group shows a 35-point DiD gap; notable because the control group's OT growth was relatively modest at 22%, suggesting less ambient staffing pressure in that subgroup, which makes the retirees' 57% growth harder to explain as anything other than deliberate spiking.</p>
-<p>In Suffolk County, PBA patrol officers show the clearest spiking signal: a 28-point DiD gap, with retirees at 103% growth versus 75% for active officers. The Suffolk Detectives Association (SDA) is the single subgroup where no spiking is detectable — the active group actually outgrew retirees by 5 points, consistent with the broader market trend for detective roles rather than targeted pre-retirement behavior. The SOA supervisors show a moderate 21-point gap.</p>
-<p>Together, five of six bargaining units show positive DiD estimates, three of which are above 28 percentage points. This pattern is not consistent with a random or environmental explanation; it is consistent with systematic pre-retirement overtime escalation.</p>
+<p>After applying the corrected spike window — using 2021–2023 for H1 retirees and 2022–2024 for H2 retirees — the DiD estimates for State Police are modestly revised downward compared to the initial analysis, reflecting that some retirees' peak OT fell just outside the strict 2022–2024 window. Nonetheless, the pattern remains consistent and meaningful across all three State Police bargaining units.</p>
+<p>The Comm &amp; Non-Comm group shows the strongest State Police DiD at 34 percentage points — notable because their control group's OT growth was low (22%), making the retirees' 55% increase difficult to attribute to environmental factors alone. Investigators and Troopers each show a 22-point DiD gap, with retirees growing OT intensity at 83–84% versus 61–63% for active officers in those units.</p>
+<p>In Suffolk County, the PBA patrol officers continue to show the strongest spiking signal at 28 points. The SDA detectives remain the one subgroup where no spiking is detectable — active detectives outpaced retirees by 8 points, consistent with a structural market trend rather than individual pre-retirement behavior. The SOA supervisor group shows a 21-point gap.</p>
+<p>Five of six bargaining units show positive DiD estimates, three at or above 21 percentage points. Importantly, these estimates are conservative: as noted in Section 3.3, several Suffolk officers like Michael Malerba peaked their overtime years before the formal spike window, meaning their intensity ratios in 2022–24 actually understate the true magnitude of their lifetime OT escalation relative to baseline.</p>
 </div>
 
 <hr class="divider">
 
 <div class="section">
 <h2>5. Overtime growth in dollar terms</h2>
-<p>The charts below show how aggregate overtime paid to the retiring cohort evolved year-by-year, including 2021 data. Green bars represent the pre-period (baseline); red bars the spike window. 2024 figures are lower for both agencies as retirees worked only a partial year before departing.</p>
-
 <div class="two-col">
 <div>
 <h3>NYS State Police retirees — total annual overtime</h3>
 <div class="chart-wrap h240">
-<canvas id="stateOTChart" role="img" aria-label="Bar chart of total overtime paid to State Police retirees from 2018 to 2024 in millions of dollars. Rises from $3.46M in 2018 to $6.89M in 2023.">State Police retiree aggregate OT climbed from $3.46M in 2018 to $6.89M in 2023 before dropping in partial-year 2024.</canvas>
+<canvas id="stateOTChart" role="img" aria-label="Bar chart of State Police retiree total OT in millions from 2018 to 2024.">State Police retiree OT climbed from $3.54M in 2018 to $7.04M in 2023.</canvas>
 </div>
 </div>
 <div>
 <h3>Suffolk County Police retirees — total annual overtime</h3>
 <div class="chart-wrap h240">
-<canvas id="suffolkOTChart" role="img" aria-label="Bar chart of total overtime paid to Suffolk County retirees from 2018 to 2024 in millions. Rises from $3.55M in 2018 to $7.47M in 2022-23.">Suffolk County retiree aggregate OT roughly doubled from $3.55M in 2018 to $7.47M by 2022.</canvas>
+<canvas id="suffolkOTChart" role="img" aria-label="Bar chart of Suffolk County retiree total OT in millions from 2018 to 2024.">Suffolk retiree OT roughly doubled from $3.55M in 2018 to $7.47M in 2022.</canvas>
 </div>
 </div>
 </div>
 <div class="legend" style="margin-top:4px">
-  <span><span class="dot" style="background:#5DCAA5"></span>Pre-period (baseline years)</span>
-  <span><span class="dot" style="background:#D85A30"></span>Spike window (2022–24)</span>
+  <span><span class="dot" style="background:#5DCAA5"></span>Pre-period baseline years (2018–2020)</span>
   <span><span class="dot" style="background:#EF9F27"></span>2021 (excluded from analysis windows)</span>
+  <span><span class="dot" style="background:#D85A30"></span>Spike window (2022–2024)</span>
 </div>
-<p class="note">Suffolk 2023 figure mirrors 2022 due to data reporting structure. 2024 figures reflect partial-year service for retirees who left mid-year.</p>
+<p class="note">2024 figures are lower for both agencies as retirees worked only partial years. Suffolk 2023 mirrors 2022 due to data reporting structure.</p>
 
 <div class="kpi-grid" style="margin-top:1rem">
-  <div class="kpi accent"><div class="kpi-label">State Police · total excess OT over 3 spike years vs baseline</div><div class="kpi-value">$11.7M</div><div class="kpi-sub">~$47,100 per retiree over 3 years</div></div>
-  <div class="kpi accent"><div class="kpi-label">Suffolk County · total excess OT over 3 spike years</div><div class="kpi-value">$2.6M</div><div class="kpi-sub">~$19,400 per retiree over 3 years</div></div>
-  <div class="kpi warn"><div class="kpi-label">State Police avg OT per retiree per year — 2018–20</div><div class="kpi-value">$14,012</div><div class="kpi-sub">Baseline period</div></div>
-  <div class="kpi warn"><div class="kpi-label">State Police avg OT per retiree per year — 2022–24</div><div class="kpi-value">~$23,000</div><div class="kpi-sub">+84% vs baseline, vs +40% for active officers</div></div>
+  <div class="kpi accent"><div class="kpi-label">State Police · total excess OT vs baseline (3 spike yrs)</div><div class="kpi-value">$11.7M</div><div class="kpi-sub">~$47,100 per retiree over 3 years</div></div>
+  <div class="kpi accent"><div class="kpi-label">Suffolk County · total excess OT vs baseline (3 spike yrs)</div><div class="kpi-value">$2.6M</div><div class="kpi-sub">~$19,400 per retiree over 3 years</div></div>
+  <div class="kpi warn"><div class="kpi-label">State Police avg OT/retiree/yr — 2018–20 baseline</div><div class="kpi-value">$14,012</div><div class="kpi-sub">Reference period</div></div>
+  <div class="kpi warn"><div class="kpi-label">State Police avg OT/retiree/yr — 2022–23 peak</div><div class="kpi-value">~$25,000</div><div class="kpi-sub">+78% vs baseline; active officers +40%</div></div>
 </div>
 </div>
 
@@ -205,31 +203,29 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
 
 <div class="section">
 <h2>6. Pension cost impact</h2>
-<p>Overtime earns outsized fiscal significance not as a one-time payroll cost but as a permanent uplift to FAS — which then pays out for 20 to 30 years. The calculation in Section 3.4 attributes the excess pension on a proportional basis: the share of the disclosed pension rate that corresponds to the excess FAS introduced by spiking.</p>
-
 <div class="chart-wrap h260">
-<canvas id="pensionImpactChart" role="img" aria-label="Stacked bar chart showing baseline vs excess pension cost for State Police and Suffolk County retirees. Combined annual excess is $4.66M.">Combined annual excess pension is $4.66M — $2.39M from State Police and $2.27M from Suffolk County retirees.</canvas>
+<canvas id="pensionImpactChart" role="img" aria-label="Stacked bar chart of baseline vs excess pension cost for both agencies. Combined annual excess is $4.66M.">Combined annual excess pension is $4.66M — $2.39M from State Police and $2.27M from Suffolk County.</canvas>
 </div>
 <div class="legend">
   <span><span class="dot" style="background:#9FE1CB"></span>Estimated baseline annual pension</span>
-  <span><span class="dot" style="background:#D85A30"></span>Excess annual pension from spiking</span>
+  <span><span class="dot" style="background:#D85A30"></span>Estimated excess annual pension from spiking</span>
 </div>
 
-<h3>6.2 Pensions vs. 2023 base pay: how many retirees earn more in pension than they did in salary?</h3>
-<p>Comparing each retiree's annual pension against their 2023 base pay rate provides a direct illustration of overtime's role: a pension exceeding base pay is only possible if substantial overtime was folded into FAS. Using 2023 base pay avoids the distortion of partial-year 2024 rates for officers who retired mid-year.</p>
-<p>For <strong>Suffolk County</strong>, 59 of 135 retirees (44%) collect a pension higher than their 2023 base pay rate. For <strong>NYS State Police</strong>, 38 of 247 (15%) do. The gap between the two agencies reflects Suffolk's significantly higher overtime culture, where PBA officers routinely earned overtime approaching or exceeding base salary in the final years.</p>
+<h3>6.2 Pensions vs. pay: how many retirees earn more in pension than salary?</h3>
+<p>For <strong>State Police</strong>, each retiree's pension is compared against their 2023 base pay rate — a clean single-rate figure. For <strong>Suffolk County</strong>, pensions are compared against each officer's <strong>average gross pay over 2021–2023</strong>. This adjustment is necessary because Suffolk payroll reports gross compensation (inclusive of overtime), not a fixed pay rate. Officers like Michael Malerba, who earned very high overtime in 2019–2021 but far less in 2022–23, would show an artificially low 2023 gross pay that overstates the pension premium. Using the 2021–2023 average provides a more stable and representative earnings baseline.</p>
+<p>Even with this conservative adjustment, <strong>58 of 135 Suffolk retirees (43%)</strong> collect an annual pension exceeding their average 2021–23 gross pay. For State Police, 38 of 252 retirees (15%) collect pensions above their 2023 base pay rate.</p>
 
 <div class="two-col">
 <div>
-<h3>Pension vs 2023 base pay — % gap</h3>
+<h3>Share of retirees with pension above pay baseline</h3>
 <div class="chart-wrap h200">
-<canvas id="pensionVsPayChart" role="img" aria-label="Horizontal stacked bar showing share of retirees whose pension is above vs below 2023 base pay. 44% of Suffolk and 15% of State Police retirees have pensions above base pay.">44% of Suffolk County and 15% of State Police retirees collect pensions exceeding their 2023 base pay.</canvas>
+<canvas id="pensionVsPayChart" role="img" aria-label="Horizontal stacked bar. 43% of Suffolk and 15% of State Police retirees have pensions above their pay baseline.">43% of Suffolk and 15% of State Police retirees collect pensions exceeding their earnings baseline.</canvas>
 </div>
 </div>
 <div>
-<h3>Distribution by how far pension differs from base pay</h3>
+<h3>Distribution: pension relative to pay baseline</h3>
 <div class="chart-wrap h200">
-<canvas id="distChart" role="img" aria-label="Grouped bar chart showing distribution of pension-to-base-pay ratio in percentage buckets for both agencies.">Most State Police pensions fall 10-30% below base pay; Suffolk pensions cluster nearer to or above base pay.</canvas>
+<canvas id="distChart" role="img" aria-label="Grouped bar chart showing distribution of pension-to-pay gap across brackets for both agencies.">Suffolk pensions cluster near or above baseline pay; State Police pensions are more concentrated 10-30% below.</canvas>
 </div>
 </div>
 </div>
@@ -237,88 +233,85 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
   <span><span class="dot" style="background:#D85A30"></span>Suffolk County Police</span>
   <span><span class="dot" style="background:#378ADD"></span>NYS State Police</span>
 </div>
-
-<p style="margin-top:.75rem">For Suffolk County, the distribution of pensions relative to base pay reflects an overtime culture so pervasive that even officers well below the average show a meaningful pension-to-pay ratio. The four retirees collecting pensions more than 100% above their base pay are at the extreme end — but 21 collect pensions 0–10% above base, and 13 collect 10–20% above. For State Police, the distribution is more concentrated in the 10–30% below base range, consistent with overtime being a significant but secondary earnings component compared to Suffolk.</p>
+<p class="note">Suffolk baseline: average gross pay 2021–2023. State Police baseline: 2023 base pay rate. Positive values = pension exceeds pay baseline.</p>
 </div>
 
 <hr class="divider">
 
 <div class="section">
 <h2>7. Individual case studies</h2>
-<p>The aggregate evidence is reinforced by individual trajectories. The chart below shows the ten officers with the most dramatic overtime intensity growth — measured as the ratio of average OT intensity in 2022–24 vs 2018–20 — with a minimum threshold of $10,000 in average annual OT during the spike window to exclude statistical artifacts from near-zero baselines. Hover over each bar for full details.</p>
+<p>Some of the most extreme cases of pension spiking are illustrated below. Officers are drawn from both agencies and represent a range of positions and bargaining units, selected for the size of their overtime dollar escalation and the relationship between their pension and their pre-retirement earnings. Hover over bars and data points for full details including name, agency, position, bargaining unit, 2023 pay, and pension.</p>
 
-<div class="chart-wrap h420" style="margin-bottom:.5rem">
-<canvas id="top10Chart" role="img" aria-label="Grouped horizontal bar chart comparing average 2018-20 and average 2022-24 overtime for the 10 officers with the largest OT ratio increase.">The top 10 spikers show average OT increasing by 3x to 16x between the baseline and spike windows.</canvas>
+<div class="chart-wrap h400" style="margin-bottom:.5rem">
+<canvas id="top10Chart" role="img" aria-label="Grouped horizontal bar chart comparing average 2018-20 and average spike-window overtime for 10 officers with the largest dollar escalation.">Top 10 officers show average OT increasing from under $35K to over $100K in the spike window.</canvas>
 </div>
 <div class="legend">
-  <span><span class="dot" style="background:#9FE1CB"></span>Average OT 2018–20 (baseline)</span>
-  <span><span class="dot" style="background:#D85A30"></span>Average OT 2022–24 (spike window)</span>
+  <span><span class="dot" style="background:#9FE1CB"></span>Avg OT 2018–20 (baseline)</span>
+  <span><span class="dot" style="background:#D85A30"></span>Avg OT spike window</span>
 </div>
-<p class="note">Hover over bars for name, agency, position, bargaining unit, 2023 base pay, and pension. Sorted by OT ratio change (most egregious first).</p>
 
-<h3>Year-by-year overtime progression — top 10 officers</h3>
-<p>The line chart below traces each officer's individual OT trajectory from 2018 through 2024, showing the ramp pattern in detail. Hover over data points for values.</p>
+<h3>Year-by-year overtime progression</h3>
 <div class="chart-wrap h320">
-<canvas id="progChart" role="img" aria-label="Multi-line chart showing individual year-by-year overtime earnings from 2018 to 2024 for the top 10 officers. Most show flat or low earnings through 2020 then sharp increases.">All ten officers show relatively flat or declining OT from 2018-2020, with sharp escalation beginning 2022 or 2023.</canvas>
+<canvas id="progChart" role="img" aria-label="Multi-line chart of individual year-by-year OT earnings from 2018 to 2024 for the top 10 officers.">Most officers show flat or moderate OT through 2020, then sharp escalation from 2021 or 2022 onward.</canvas>
 </div>
-<p class="note">2021 shown but excluded from analytical windows. Some 2024 values are near zero due to early retirement in the year.</p>
+<p class="note">2021 shown but excluded from analysis windows for H2 retirees. Some 2024 values near zero reflect early retirement.</p>
 
 <h3>7.1 NYS State Police — spotlight cases</h3>
 
 <div class="ic">
   <div class="ic-header">
-    <div><div class="ic-name">William J. Shea</div><div class="ic-meta">Senior Investigator · NYS Police Investigators Assoc · Base pay (2023): $124,876 · Pension: $130,068</div></div>
-    <span class="badge badge-red">OT ratio +686%</span>
+    <div><div class="ic-name">Brian K. Raymond</div><div class="ic-meta">Technical Sergeant · State Police Comm &amp; Non-Comm · 2023 base pay: $118,161 · Pension: $122,699</div></div>
+    <span class="badge badge-red">Pension $4,538 above base pay</span>
   </div>
-  <div class="ic-chart-wrap"><canvas id="icShea" role="img" aria-label="Bar chart of Shea's annual OT from 2018 to 2024 showing steep ramp.">Shea's OT rose from under $8K/year before 2022 to $70K in 2024.</canvas></div>
-  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">From under $8,000/year in OT through 2021, Shea's overtime surged to $28,087 (2022), $42,408 (2023) and $70,128 (2024). Average OT intensity climbed from 5.1% to 40.0% of base pay. His pension of $130,068 exceeds his base pay of $124,876.</p>
+  <div class="ic-chart-wrap"><canvas id="icRaymond" role="img" aria-label="Bar chart of Raymond's annual OT 2018-2024.">Raymond's OT surged from ~$25K in 2018 to $160K in 2023.</canvas></div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Raymond's overtime trajectory is among the steepest in dollar terms in the State Police cohort. After averaging ~$24,000/year in 2018–20, his OT climbed to $57,360 (2021), $117,249 (2022), and peaked at $160,216 in 2023 — a 573% increase. His average OT in the spike window ($118,189/yr) is nearly five times the baseline. His pension of $122,699 exceeds his $118,161 base pay.</p>
 </div>
 
 <div class="ic">
   <div class="ic-header">
-    <div><div class="ic-name">Jason J. Pelkey</div><div class="ic-meta">Senior Investigator · NYS Police Investigators Assoc · Base pay (2023): $124,876 · Pension: $114,020</div></div>
-    <span class="badge badge-amber">OT ratio +687%</span>
+    <div><div class="ic-name">Jason J. Pelkey</div><div class="ic-meta">Senior Investigator · NYS Police Investigators Assoc · 2023 base pay: $124,876 · Pension: $114,020</div></div>
+    <span class="badge badge-amber">Avg OT: $8,993 → $69,478 (+$60,484/yr)</span>
   </div>
-  <div class="ic-chart-wrap"><canvas id="icPelkey" role="img" aria-label="Bar chart of Pelkey's annual OT from 2018 to 2024.">Pelkey's OT was flat through 2020, then surged in 2022-24.</canvas></div>
-  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Pelkey's trajectory is textbook spiking: relatively flat OT through 2020 ($10,190 peak), followed by $62,155 (2022), $85,582 (2023), and $60,696 (2024). Average OT intensity rose from 7.8% to 61.6% of base pay.</p>
+  <div class="ic-chart-wrap"><canvas id="icPelkey" role="img" aria-label="Bar chart of Pelkey's annual OT 2018-2024.">Pelkey's OT was flat through 2020, then surged in 2022-24.</canvas></div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Pelkey's trajectory is textbook spiking: relatively flat through 2020 ($10,190 peak), followed by $62,155 (2022), $85,582 (2023), and $60,696 (2024). Average OT intensity rose from 7.8% to 61.6% of base pay. His annual overtime in 2023 alone exceeded half his base salary.</p>
 </div>
 
 <div class="ic">
   <div class="ic-header">
-    <div><div class="ic-name">Jeffrey T. Dovigh</div><div class="ic-meta">State Police Trooper · State Police – Troopers · Base pay (2023): $100,516 · Pension: $97,377</div></div>
-    <span class="badge badge-amber">Highest absolute OT in 2024: $102,335</span>
+    <div><div class="ic-name">Timothy A. Northrup</div><div class="ic-meta">Investigator · NYS Police Investigators Assoc · 2023 base pay: $112,711 · Pension: $112,967</div></div>
+    <span class="badge badge-red">Pension effectively equals base pay</span>
   </div>
-  <div class="ic-chart-wrap"><canvas id="icDovigh" role="img" aria-label="Bar chart of Dovigh's annual OT from 2018 to 2024 showing consistent upward ramp.">Dovigh's OT rose steadily from $39K in 2018 to $102K in 2024.</canvas></div>
-  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Dovigh had the highest absolute OT of any State Police retiree in 2024 at $102,335. His escalation is steady and multi-year: $39K (2018) → $70K (2022) → $83K (2023) → $102K (2024). OT intensity rose from 34.9% to 85.9% of base pay.</p>
+  <div class="ic-chart-wrap"><canvas id="icNorthrup" role="img" aria-label="Bar chart of Northrup's annual OT 2018-2024.">Northrup's OT jumped from under $20K to $91K in 2024.</canvas></div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">After earning $19,515 in OT in 2018 and tapering off through 2020–21, Northrup's OT surged to $77,671 (2023) and $91,773 (2024). His pension of $112,967 is virtually identical to his $112,711 base pay — an outcome only possible because of the substantial overtime embedded in his FAS.</p>
 </div>
 
 <h3>7.2 Suffolk County Police — spotlight cases</h3>
 
 <div class="ic">
   <div class="ic-header">
-    <div><div class="ic-name">Samuel Barreto</div><div class="ic-meta">Police Officer · PBA · Base pay (2023): $142,712 · Pension: $184,373</div></div>
-    <span class="badge badge-red">OT ratio +725% · Pension $41K above base pay</span>
+    <div><div class="ic-name">Kenneth Bunger</div><div class="ic-meta">Police Officer · PBA · Avg 2021–23 pay: $147,654 · Pension: $231,286</div></div>
+    <span class="badge badge-red">Pension $83,632 above avg 2021–23 pay</span>
   </div>
-  <div class="ic-chart-wrap"><canvas id="icBarreto" role="img" aria-label="Bar chart of Barreto's OT from 2018 to 2023 showing extreme spike in 2021-23.">Barreto's OT jumped from under $25K to $160K by 2022-23.</canvas></div>
-  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Barreto's overtime in 2022 alone — $160,062 — nearly matches his $184,373 annual pension. He began his ramp in 2019, with OT intensifying sharply through 2021 ($89,739) and peaking in 2022–23. OT ratio climbed from 11.3% to 93.0% of base pay.</p>
+  <div class="ic-chart-wrap"><canvas id="icBunger" role="img" aria-label="Bar chart of Bunger's annual OT 2018-2023.">Bunger's OT rose from $26K in 2018 to $165K in 2022-23.</canvas></div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Bunger's pension of $231,286 exceeds his average 2021–23 gross pay by $83,632 — one of the largest absolute gaps in the Suffolk cohort. His OT grew from $25,750 (2018) to $102,109 (2021) and stabilized at $164,633/year through 2022–23, reflecting a sustained high-OT strategy over multiple years that fully penetrated the FAS window.</p>
 </div>
 
 <div class="ic">
   <div class="ic-header">
-    <div><div class="ic-name">Christina Gleason</div><div class="ic-meta">Police Officer · PBA · Base pay (2023): $150,929 · Pension: $185,188</div></div>
-    <span class="badge badge-red">Highest absolute OT: $142,812 (2022)</span>
+    <div><div class="ic-name">Patrick Halpin</div><div class="ic-meta">Police Officer · PBA · Avg 2021–23 pay: $146,676 · Pension: $208,381</div></div>
+    <span class="badge badge-red">Pension $61,705 above avg 2021–23 pay</span>
   </div>
-  <div class="ic-chart-wrap"><canvas id="icGleason" role="img" aria-label="Bar chart of Gleason's annual OT from 2018 to 2023.">Gleason earned $45K OT in 2018, jumping to $143K by 2021 and maintaining $143K through 2023.</canvas></div>
-  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Gleason was the highest absolute OT earner in Suffolk in 2022 and 2024. OT ratio climbed from 36.2% to 102.9% of base pay. Her pension of $185,188 exceeds her 2023 base pay of $150,929. The 2021 spike of $142,907 reveals the spiking began ahead of the FAS window.</p>
+  <div class="ic-chart-wrap"><canvas id="icHalpin" role="img" aria-label="Bar chart of Halpin's annual OT 2018-2023.">Halpin's OT jumped from $38K in 2018 to $194K in 2022-23.</canvas></div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Halpin's overtime in 2021 reached $180,152 — exceeding his base salary — before stabilizing at $193,604/year in 2022–23. His pension of $208,381 is $61,705 above his average 2021–23 gross pay. This is a case where the spiking began earlier than the formal spike window, meaning the DiD analysis actually understates the full escalation.</p>
 </div>
 
 <div class="ic">
   <div class="ic-header">
-    <div><div class="ic-name">David Bernstein</div><div class="ic-meta">Police Officer · PBA · Base pay (2023): $151,516 · Pension: $128,783</div></div>
-    <span class="badge badge-amber">OT ratio +421%</span>
+    <div><div class="ic-name">Samuel Barreto</div><div class="ic-meta">Police Officer · PBA · Avg 2021–23 pay: ~$131,000 · Pension: $184,373</div></div>
+    <span class="badge badge-amber">OT avg: $17,160 → $108,428 (+$91,268/yr)</span>
   </div>
-  <div class="ic-chart-wrap"><canvas id="icBernstein" role="img" aria-label="Bar chart of Bernstein's OT 2018 to 2023.">Bernstein's OT grew from $4K in 2018 to $76K in 2024.</canvas></div>
-  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Bernstein shows the clearest late-stage ramp: from just $3,995 in 2018 and $13,495 in 2020, his OT grew to $37,970 (2022) and $76,137 (2024 partial year). Average OT intensity rose from 6.6% to 34.5% of base pay.</p>
+  <div class="ic-chart-wrap"><canvas id="icBarreto" role="img" aria-label="Bar chart of Barreto's annual OT 2018-2023.">Barreto's OT jumped from $7K in 2018 to $160K in 2022-23.</canvas></div>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-top:.5rem">Barreto had one of the largest absolute increases in average OT across both agencies — from $17,160/year in the baseline to $108,428/year in the spike window, a $91,268 annual increase. His OT in 2022–23 was $160,062/year, nearly matching the $184,373 pension he will now collect annually.</p>
 </div>
 </div>
 
@@ -326,56 +319,37 @@ The analysis finds statistically meaningful evidence that pre-retirement officer
 
 <div class="section">
 <h2>8. Contextual benchmarks</h2>
-<p>This analysis is not an isolated anomaly. Pension spiking via overtime is a recognized pattern in New York public-sector retirement systems. In 2010, Attorney General Cuomo launched a formal investigation into "pension padding," noting cases where officers' total pay more than doubled in the final year and that a $50,000 average salary inflation over a 20-year payout could cost taxpayers $500,000 or more per individual. The Empire Center for Public Policy has repeatedly documented Suffolk County detectives averaging over $225,000 in total annual compensation including overtime, feeding pensions routinely exceeding $100,000. In Rochester (December 2024), a single retiring detective averaged 26 hours of overtime per week in his final year, grossed $299,033, and retired with a $169,176 annual pension — contributing to a 57% single-year spike in that city's police pension contributions. At the state level, newly retired NYPD officers averaged $103,859 in pension payments for FY2025, with the Empire Center attributing a significant portion to pandemic-era overtime inflating FAS values.</p>
+<p>This analysis is not an isolated anomaly. Pension spiking via overtime is a recognized, recurring pattern in New York public-sector retirement systems. In 2010, Attorney General Cuomo launched a formal investigation into "pension padding," noting cases where officers' total pay more than doubled in the final year and that a $50,000 average salary inflation over a 20-year payout could cost taxpayers $500,000 or more per individual. The Empire Center for Public Policy has repeatedly documented Suffolk County detectives averaging over $225,000 in total annual compensation including overtime, feeding pensions routinely exceeding $100,000. In Rochester (December 2024), a single retiring detective averaged 26 hours of overtime per week in his final year, grossed $299,033, and retired with a $169,176 annual pension — contributing to a 57% single-year spike in that city's police pension contributions. At the state level, newly retired NYPD officers averaged $103,859 in pension payments for FY2025, with the Empire Center attributing part of that increase to pandemic-era overtime inflating FAS values.</p>
 </div>
 
 <hr class="divider">
 
 <div class="section">
 <h2>9. Caveats &amp; limitations</h2>
-<p><strong>Staffing shortages and post-pandemic OT:</strong> A significant share of the observed increase reflects real staffing pressures. The DiD design controls for this by benchmarking against active officers. However, if retirees are systematically assigned to overtime-heavy posts in their final years, the DiD may partially attribute structural role changes to individual choice.</p>
-<p><strong>Retro pay:</strong> Some large single-year OT figures in 2022–23 may include retroactive contract payments. To the extent these are pensionable, they legitimately inflate FAS. Preliminary review of individual high earners does not suggest this is the dominant driver.</p>
-<p><strong>Control group contamination:</strong> Active employees within 1–3 years of retirement are likely already spiking, making our DiD estimate conservative.</p>
-<p><strong>Tier differences:</strong> Tier 6 members (hired post-2012, ~2% of this cohort) face a 15% OT cap. The analysis does not separate them; for this cohort the effect is negligible.</p>
+<p><strong>Staffing shortages and post-pandemic OT:</strong> A significant share of the observed increase reflects real staffing pressures. The DiD design controls for this, but if retirees are systematically assigned to overtime-heavy posts in their final years, the DiD may partially attribute structural role changes to individual pre-retirement choice.</p>
+<p><strong>Suffolk OT intensity underestimation:</strong> As noted in Section 3.3, several Suffolk officers peaked their overtime before the formal spike window. Their 2022–24 intensity ratios understate the full lifetime escalation, meaning our DiD estimates are conservative for the Suffolk cohort.</p>
+<p><strong>Retro pay:</strong> Some large single-year figures in 2022–23 may include retroactive contract payments. To the extent these are pensionable they legitimately inflate FAS, but preliminary review does not suggest this is the dominant driver.</p>
+<p><strong>Control group contamination:</strong> Active employees within 1–3 years of retirement are likely already spiking, making all DiD estimates conservative.</p>
+<p><strong>Tier differences:</strong> Tier 6 members (post-2012, ~2% of this cohort) face a 15% OT cap. The effect on aggregate figures is negligible.</p>
 <p><strong>Name-matching:</strong> Approximately 20–25% of the pension roll could not be reliably matched to payroll records and are excluded, which may introduce selection bias.</p>
 </div>
 
 <hr class="divider">
-
-<div class="section">
-<h2>10. Suggestions for further investigation</h2>
-<p>Expanding to earlier retiree cohorts (2020–2023) would allow a longitudinal test of whether spiking intensity has increased over time and would multiply the cumulative fiscal impact estimate. Expanding scope to other PFRS-member agencies — Nassau County Police, NYC Fire Department, major municipal departments — would provide a broader picture. A tier-specific breakdown would test whether uncapped Tier 2 members show larger DiD estimates than Tier 6 members, directly informing legislative reform proposals. Replacing the flat 20-year estimate with an NPV calculation incorporating actuarial life tables and COLA assumptions would sharpen the fiscal cost figure. Finally, if shift-assignment data are obtainable, testing whether pre-retirement officers are disproportionately assigned to overtime-rich roles would sharpen the causal attribution.</p>
-</div>
-
-<hr class="divider">
-<p style="font-size:12px;color:var(--color-text-secondary)">Data sources: NYS PFRS 2024 Pension Roll (NYSLRS); NYS Payroll data; Suffolk County Public Payroll. All names are drawn from publicly available government payroll and pension records. This report does not allege individual wrongdoing — overtime spiking is legal under current PFRS rules for pre-Tier-6 members.</p>
+<p style="font-size:12px;color:var(--color-text-secondary)">Data sources: NYS PFRS 2024 Pension Roll (NYSLRS); NYS Payroll data; Suffolk County Public Payroll. All names are drawn from publicly available government records. This report does not allege individual wrongdoing — overtime spiking is legal under current PFRS rules for pre-Tier-6 members.</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
-const top10data = [
-  {name:'Michael S. Galanti',agency:'NYS State Police',pos:'Investigator',bu:'Investigators Assoc',base23:112711,pension:102142,ot18:1974,ot19:0,ot20:916,ot21:0,ot22:1076,ot23:12044,ot24:17377,avg1820:964,avg2224:10166,ratioChg:16.50},
-  {name:'Timothy J. Ayers',agency:'NYS State Police',pos:'Investigator',bu:'Investigators Assoc',base23:112711,pension:94704,ot18:11609,ot19:126,ot20:776,ot21:0,ot22:56542,ot23:55108,ot24:18644,avg1820:4170,avg2224:43431,ratioChg:9.75},
-  {name:'Amy L. Wilski',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:92822,ot18:9416,ot19:144,ot20:0,ot21:0,ot22:34281,ot23:28530,ot24:44587,avg1820:3187,avg2224:35799,ratioChg:9.14},
-  {name:'Jermaine Q. Smith',agency:'NYS State Police',pos:'Trooper',bu:'Troopers',base23:101776,pension:88887,ot18:10531,ot19:24745,ot20:20078,ot21:0,ot22:25653,ot23:28471,ot24:2884,avg1820:18451,avg2224:19003,ratioChg:8.83},
-  {name:'Jennifer A. Hahl',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:87888,ot18:3673,ot19:5652,ot20:640,ot21:0,ot22:13218,ot23:34507,ot24:28731,avg1820:3322,avg2224:25485,ratioChg:8.62},
-  {name:'Matthew J. Stegner',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:95097,ot18:3897,ot19:1051,ot20:1535,ot21:0,ot22:25919,ot23:36869,ot24:0,avg1820:2161,avg2224:20929,ratioChg:7.85},
-  {name:'Samuel Barreto',agency:'Suffolk County Police',pos:'Police Officer',bu:'PBA',base23:142712,pension:184373,ot18:6620,ot19:23612,ot20:21248,ot21:89739,ot22:160062,ot23:160062,ot24:5161,avg1820:17160,avg2224:108429,ratioChg:7.25},
-  {name:'Jason J. Pelkey',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:114020,ot18:12386,ot19:4403,ot20:10190,ot21:18964,ot22:62155,ot23:85582,ot24:60696,avg1820:8993,avg2224:69478,ratioChg:6.87},
-  {name:'William J. Shea',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:130068,ot18:5181,ot19:7546,ot20:4933,ot21:19011,ot22:28087,ot23:42408,ot24:70128,avg1820:5887,avg2224:46874,ratioChg:6.86},
-  {name:'Steven G. Hahl',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:103434,ot18:3720,ot19:2039,ot20:4540,ot21:0,ot22:16901,ot23:17223,ot24:19895,avg1820:3433,avg2224:18006,ratioChg:5.88}
-];
-
 const fmt = v => '$'+Math.round(v).toLocaleString();
-const fmtM = v => '$'+(v/1e6).toFixed(3)+'M';
+const fmtM = v => '$'+(v).toFixed(3)+'M';
 
 new Chart(document.getElementById('didChart'),{
   type:'bar',
   data:{
     labels:['Investigators\n(State)','Troopers\n(State)','Comm/Non-Comm\n(State)','PBA\n(Suffolk)','SDA\n(Suffolk)','SOA\n(Suffolk)'],
     datasets:[
-      {label:'Retirees',data:[101.6,113.6,57.0,102.6,30.1,48.0],backgroundColor:'#D85A30',borderRadius:3},
-      {label:'Active officers',data:[60.7,62.9,21.7,74.8,37.7,27.1],backgroundColor:'#378ADD',borderRadius:3}
+      {label:'Retirees',data:[83,84,55,103,30,48],backgroundColor:'#D85A30',borderRadius:3},
+      {label:'Active officers',data:[61,63,22,75,38,27],backgroundColor:'#378ADD',borderRadius:3}
     ]
   },
   options:{responsive:true,maintainAspectRatio:false,
@@ -383,36 +357,31 @@ new Chart(document.getElementById('didChart'),{
     scales:{x:{ticks:{font:{size:11}},grid:{display:false}},y:{title:{display:true,text:'OT intensity change (%)',font:{size:11}},grid:{color:'rgba(128,128,128,.1)'}}}}
 });
 
-const stateOT=[3.461,3.476,3.703,4.587,5.959,6.892,4.318];
-const suffolkOT=[3.548,3.829,4.173,6.652,7.466,7.466,1.790];
-const years=['2018','2019','2020','2021','2022','2023','2024'];
+const yrs=['2018','2019','2020','2021','2022','2023','2024'];
+const stOT=[3.535,3.589,3.761,4.664,6.065,7.041,4.318];
+const sufOT=[3.548,3.829,4.173,6.652,7.466,7.466,1.790];
 const barColors=['#5DCAA5','#5DCAA5','#5DCAA5','#EF9F27','#D85A30','#D85A30','#BA7517'];
 
 new Chart(document.getElementById('stateOTChart'),{
-  type:'bar',
-  data:{labels:years,datasets:[{label:'Total OT',data:stateOT,backgroundColor:barColors,borderRadius:3}]},
+  type:'bar',data:{labels:yrs,datasets:[{label:'Total OT',data:stOT,backgroundColor:barColors,borderRadius:3}]},
   options:{responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtM(c.raw*1e6)}}},
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtM(c.raw)}}},
     scales:{x:{grid:{display:false},ticks:{font:{size:11}}},y:{ticks:{callback:v=>'$'+v.toFixed(2)+'M',font:{size:11}},grid:{color:'rgba(128,128,128,.1)'}}}}
 });
-
 new Chart(document.getElementById('suffolkOTChart'),{
-  type:'bar',
-  data:{labels:years,datasets:[{label:'Total OT',data:suffolkOT,backgroundColor:barColors,borderRadius:3}]},
+  type:'bar',data:{labels:yrs,datasets:[{label:'Total OT',data:sufOT,backgroundColor:barColors,borderRadius:3}]},
   options:{responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtM(c.raw*1e6)}}},
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtM(c.raw)}}},
     scales:{x:{grid:{display:false},ticks:{font:{size:11}}},y:{ticks:{callback:v=>'$'+v.toFixed(2)+'M',font:{size:11}},grid:{color:'rgba(128,128,128,.1)'}}}}
 });
 
 new Chart(document.getElementById('pensionImpactChart'),{
   type:'bar',
-  data:{
-    labels:['NYS State Police (247 retirees)','Suffolk County Police (135 retirees)'],
+  data:{labels:['NYS State Police (247 retirees)','Suffolk County Police (135 retirees)'],
     datasets:[
       {label:'Baseline pension',data:[23619,20882],backgroundColor:'#9FE1CB',borderRadius:3},
-      {label:'Excess pension from spiking',data:[2394,2267],backgroundColor:'#D85A30',borderRadius:3}
-    ]
-  },
+      {label:'Excess pension',data:[2394,2267],backgroundColor:'#D85A30',borderRadius:3}
+    ]},
   options:{responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label+': $'+Math.round(c.raw).toLocaleString()+'K'}}},
     scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,title:{display:true,text:'Annual pension cost ($000s)',font:{size:11}},ticks:{callback:v=>'$'+v+'K'},grid:{color:'rgba(128,128,128,.1)'}}}}
@@ -420,115 +389,104 @@ new Chart(document.getElementById('pensionImpactChart'),{
 
 new Chart(document.getElementById('pensionVsPayChart'),{
   type:'bar',
-  data:{
-    labels:['Suffolk County Police','NYS State Police'],
+  data:{labels:['Suffolk County Police','NYS State Police'],
     datasets:[
-      {label:'Pension ≥ 2023 base pay',data:[44,15],backgroundColor:'#D85A30',borderRadius:3},
-      {label:'Pension < 2023 base pay',data:[56,85],backgroundColor:'#9FE1CB',borderRadius:3}
-    ]
-  },
+      {label:'Pension ≥ pay baseline',data:[43,15],backgroundColor:'#D85A30',borderRadius:3},
+      {label:'Pension < pay baseline',data:[57,85],backgroundColor:'#9FE1CB',borderRadius:3}
+    ]},
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+'%'}}},
     scales:{x:{stacked:true,max:100,ticks:{callback:v=>v+'%'},grid:{color:'rgba(128,128,128,.1)'}},y:{stacked:true,grid:{display:false}}}}
 });
 
-const buckets=['<-30%','-20 to -30%','-10 to -20%','0 to -10%','0 to +10%','+10 to +20%','+20 to +30%','+30 to +50%','+50 to +100%','>+100%'];
-const sufDist=[11,15,25,26,21,13,8,6,7,4];
-const stDist=[64,60,50,37,26,10,2,0,0,0];
+const buckets=['<−30%','−20 to −30%','−10 to −20%','0 to −10%','0 to +10%','+10 to +20%','+20 to +30%','+30 to +50%','+50 to +100%','>+100%'];
 new Chart(document.getElementById('distChart'),{
   type:'bar',
-  data:{labels:buckets,datasets:[
-    {label:'Suffolk County',data:sufDist,backgroundColor:'#D85A30',borderRadius:2},
-    {label:'NYS State Police',data:stDist,backgroundColor:'#378ADD',borderRadius:2}
-  ]},
+  data:{labels:buckets,
+    datasets:[
+      {label:'Suffolk County',data:[10,15,19,33,18,16,12,7,4,1],backgroundColor:'#D85A30',borderRadius:2},
+      {label:'NYS State Police',data:[65,60,51,38,26,10,2,0,0,0],backgroundColor:'#378ADD',borderRadius:2}
+    ]},
   options:{responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.raw+' retirees'}}},
     scales:{x:{ticks:{font:{size:9},maxRotation:45},grid:{display:false}},y:{ticks:{font:{size:11}},grid:{color:'rgba(128,128,128,.1)'}}}}
 });
 
-const top10Labels = top10data.map(d=>{
-  const n=d.name.split(' '); return n[n.length-1]+', '+n[0][0]+'.';
-});
+const top10 = [
+  {name:'Brian K. Raymond',agency:'NYS State Police',pos:'Tech Sergeant',bu:'Comm & Non-Comm',base23:118161,pension:122699,ot:[26846,25680,18725,57360,117249,160216,77102],avg1820:23750,avg2224:118189},
+  {name:'Patrick Halpin',agency:'Suffolk County Police',pos:'Police Officer',bu:'PBA',base23:148582,pension:208381,ot:[38272,41429,54001,180152,193604,193604,12588],avg1820:44567,avg2224:133265},
+  {name:'Kenneth Bunger',agency:'Suffolk County Police',pos:'Police Officer',bu:'PBA',base23:151516,pension:231286,ot:[25750,20142,54978,102109,164633,164633,37679],avg1820:33623,avg2224:122315},
+  {name:'Samuel Barreto',agency:'Suffolk County Police',pos:'Police Officer',bu:'PBA',base23:142712,pension:184373,ot:[6620,23612,21248,89739,160062,160062,5161],avg1820:17160,avg2224:108428},
+  {name:'Jason J. Pelkey',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:114020,ot:[12386,4403,10190,18964,62155,85582,60696],avg1820:8993,avg2224:69478},
+  {name:'Jeffrey T. Dovigh',agency:'NYS State Police',pos:'Trooper',bu:'Troopers',base23:100516,pension:97377,ot:[39390,30497,27433,37737,70284,82770,102335],avg1820:32440,avg2224:85130},
+  {name:'Patrick Saunders',agency:'Suffolk County Police',pos:'Police Officer',bu:'PBA',base23:136959,pension:168792,ot:[8740,11459,26157,79969,89131,89131,15123],avg1820:15452,avg2224:64462},
+  {name:'Timothy A. Northrup',agency:'NYS State Police',pos:'Investigator',bu:'Investigators Assoc',base23:112711,pension:112967,ot:[19515,7356,4714,4157,13274,77671,91773],avg1820:10528,avg2224:60906},
+  {name:'Timothy J. Ayers',agency:'NYS State Police',pos:'Investigator',bu:'Investigators Assoc',base23:112711,pension:94704,ot:[11609,126,776,21238,56542,55108,18644],avg1820:4170,avg2224:43431},
+  {name:'William J. Shea',agency:'NYS State Police',pos:'Sr Investigator',bu:'Investigators Assoc',base23:124876,pension:130068,ot:[5181,7546,4933,19011,28087,42408,70128],avg1820:5887,avg2224:46874}
+];
+
+const shortLabel = d => { const n=d.name.split(' '); return n[n.length-1]+', '+n[0][0]+'.'; };
+
 new Chart(document.getElementById('top10Chart'),{
   type:'bar',
-  data:{
-    labels:top10Labels,
+  data:{labels:top10.map(shortLabel),
     datasets:[
-      {label:'Avg OT 2018–20',data:top10data.map(d=>Math.round(d.avg1820)),backgroundColor:'#9FE1CB',borderRadius:3},
-      {label:'Avg OT 2022–24',data:top10data.map(d=>Math.round(d.avg2224)),backgroundColor:'#D85A30',borderRadius:3}
-    ]
-  },
-  options:{
-    indexAxis:'y',responsive:true,maintainAspectRatio:false,
-    plugins:{
-      legend:{display:false},
-      tooltip:{
-        callbacks:{
-          title:items=>{const d=top10data[items[0].dataIndex];return d.name+' ('+d.agency+')';},
-          afterTitle:items=>{const d=top10data[items[0].dataIndex];return d.pos+' · '+d.bu+'\n2023 Base Pay: '+fmt(d.base23)+' · Pension: '+fmt(d.pension);},
-          label:c=>c.dataset.label+': '+fmt(c.raw),
-          afterBody:items=>{const d=top10data[items[0].dataIndex];return 'OT ratio change: '+d.ratioChg.toFixed(1)+'x';}
-        }
-      }
-    },
+      {label:'Avg OT 2018–20',data:top10.map(d=>Math.round(d.avg1820)),backgroundColor:'#9FE1CB',borderRadius:3},
+      {label:'Avg OT spike window',data:top10.map(d=>Math.round(d.avg2224)),backgroundColor:'#D85A30',borderRadius:3}
+    ]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{
+        title:items=>{const d=top10[items[0].dataIndex];return d.name+' ('+d.agency+')';},
+        afterTitle:items=>{const d=top10[items[0].dataIndex];return d.pos+' · '+d.bu+'\n2023 Pay: '+fmt(d.base23)+' · Pension: '+fmt(d.pension);},
+        label:c=>c.dataset.label+': '+fmt(c.raw),
+        afterBody:items=>{const d=top10[items[0].dataIndex];return 'Dollar increase: '+fmt(d.avg2224-d.avg1820)+'/yr';}
+      }}},
     scales:{
-      x:{ticks:{callback:v=>'$'+Math.round(v/1000)+'K',font:{size:11}},title:{display:true,text:'Average annual overtime ($)'},grid:{color:'rgba(128,128,128,.1)'}},
-      y:{grid:{display:false},ticks:{font:{size:11}}}
-    }
-  }
+      x:{ticks:{callback:v=>'$'+Math.round(v/1000)+'K',font:{size:11}},title:{display:true,text:'Average annual overtime'},grid:{color:'rgba(128,128,128,.1)'}},
+      y:{grid:{display:false},ticks:{font:{size:11}}}}}
 });
 
-const progColors=['#D85A30','#378ADD','#5DCAA5','#EF9F27','#533AB7','#B85A30','#0F6E56','#3B6D11','#993556','#5F5E5A'];
-const progYears=[2018,2019,2020,2021,2022,2023,2024];
-const progDatasets=top10data.map((d,i)=>({
-  label:d.name.split(' ').pop()+', '+d.name.split(' ')[0][0]+'.',
-  data:[d.ot18,d.ot19,d.ot20,d.ot21,d.ot22,d.ot23,d.ot24],
-  borderColor:progColors[i],backgroundColor:progColors[i]+'33',
-  pointRadius:4,pointHoverRadius:6,tension:.3,borderWidth:2,fill:false
-}));
-
+const colors=['#D85A30','#378ADD','#5DCAA5','#EF9F27','#533AB7','#B85A30','#0F6E56','#3B6D11','#993556','#5F5E5A'];
+const yrLabels=['2018','2019','2020','2021','2022','2023','2024'];
 new Chart(document.getElementById('progChart'),{
   type:'line',
-  data:{labels:progYears.map(String),datasets:progDatasets},
-  options:{
-    responsive:true,maintainAspectRatio:false,
-    plugins:{
-      legend:{display:false},
-      tooltip:{
-        callbacks:{
-          title:items=>{
-            const d=top10data[items[0].datasetIndex];
-            return d.name+' ('+d.agency+')';
-          },
-          afterTitle:items=>{
-            const d=top10data[items[0].datasetIndex];
-            return d.pos+' · '+d.bu+'\n2023 Base: '+fmt(d.base23)+' · Pension: '+fmt(d.pension);
-          },
-          label:c=>'OT '+progYears[c.dataIndex]+': '+fmt(c.raw)
-        }
-      }
-    },
+  data:{labels:yrLabels,
+    datasets:top10.map((d,i)=>({
+      label:shortLabel(d),data:d.ot,
+      borderColor:colors[i],backgroundColor:colors[i]+'33',
+      pointRadius:4,pointHoverRadius:6,tension:.3,borderWidth:2,fill:false
+    }))},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{
+        title:items=>{const d=top10[items[0].datasetIndex];return d.name+' ('+d.agency+')';},
+        afterTitle:items=>{const d=top10[items[0].datasetIndex];return d.pos+' · '+d.bu+'\n2023 Pay: '+fmt(d.base23)+' · Pension: '+fmt(d.pension);},
+        label:c=>'OT '+yrLabels[c.dataIndex]+': '+fmt(c.raw)
+      }}},
     scales:{
       x:{grid:{color:'rgba(128,128,128,.1)'},ticks:{font:{size:11}}},
-      y:{ticks:{callback:v=>'$'+Math.round(v/1000)+'K',font:{size:11}},grid:{color:'rgba(128,128,128,.1)'}}
-    }
+      y:{ticks:{callback:v=>'$'+Math.round(v/1000)+'K',font:{size:11}},grid:{color:'rgba(128,128,128,.1)'}}}
   }
 });
 
-function makeIcChart(id,data,labels){
+function icChart(id,data,labels,colors_){
   new Chart(document.getElementById(id),{
-    type:'bar',
-    data:{labels,datasets:[{data,backgroundColor:data.map((v,i)=>i<=3?'#9FE1CB':(i===4?'#EF9F27':'#D85A30')),borderRadius:3}]},
+    type:'bar',data:{labels,datasets:[{data,backgroundColor:colors_,borderRadius:3}]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.raw)}}},
       scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{ticks:{callback:v=>'$'+Math.round(v/1000)+'K',font:{size:10}},grid:{color:'rgba(128,128,128,.1)'}}}}
   });
 }
+const ic=['#5DCAA5','#5DCAA5','#5DCAA5','#EF9F27','#D85A30','#D85A30','#D85A30'];
+const icS=['#5DCAA5','#5DCAA5','#5DCAA5','#EF9F27','#D85A30','#D85A30'];
+const yrAll=['2018','2019','2020','2021','2022','2023','2024'];
+const yrNoFinal=['2018','2019','2020','2021','2022','2023'];
 
-makeIcChart('icShea',[5181,7546,4933,19011,28087,42408,70128],['2018','2019','2020','2021','2022','2023','2024']);
-makeIcChart('icPelkey',[12386,4403,10190,18964,62155,85582,60696],['2018','2019','2020','2021','2022','2023','2024']);
-makeIcChart('icDovigh',[39390,30497,27433,37737,70284,82770,102335],['2018','2019','2020','2021','2022','2023','2024']);
-makeIcChart('icBarreto',[6620,23612,21248,89739,160062,160062],['2018','2019','2020','2021','2022','2023']);
-makeIcChart('icGleason',[44965,53244,48469,142907,142812,142812],['2018','2019','2020','2021','2022','2023']);
-makeIcChart('icBernstein',[3995,10765,13495,16593,37970,37970],['2018','2019','2020','2021','2022','2023']);
+icChart('icRaymond',[26846,25680,18725,57360,117249,160216,77102],yrAll,ic);
+icChart('icPelkey',[12386,4403,10190,18964,62155,85582,60696],yrAll,ic);
+icChart('icNorthrup',[19515,7356,4714,4157,13274,77671,91773],yrAll,ic);
+icChart('icBunger',[25750,20142,54978,102109,164633,164633],yrNoFinal,icS);
+icChart('icHalpin',[38272,41429,54001,180152,193604,193604],yrNoFinal,icS);
+icChart('icBarreto',[6620,23612,21248,89739,160062,160062],yrNoFinal,icS);
 </script>
